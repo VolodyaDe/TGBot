@@ -10,10 +10,10 @@ public class Main {
             if (text.equals("exit"))
                 break;
 
-            ConsoleRequest Set = new ConsoleRequest(text);
-            String message = Set.getMessage();
-            ConsoleReply Get = new ConsoleReply(message);
-            Get.printMessage();
+            ConsoleRequest Setter = new ConsoleRequest(text);
+            String message = Setter.getMessage();
+            ConsoleReply Getter = new ConsoleReply(message);
+            Getter.printMessage();
         }
     }
 }
