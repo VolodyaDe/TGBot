@@ -11,9 +11,9 @@ public class Main {
                 break;
 
             ConsoleRequest Set = new ConsoleRequest(text);
-            String message = Set.getMessage();
+            String message = Set.getMsg();
             ConsoleReply Get = new ConsoleReply(message);
-            Get.printMessage();
+            Get.printMsg();
         }
     }
 }

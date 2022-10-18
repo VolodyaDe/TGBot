@@ -7,7 +7,7 @@ public class ConsoleReply implements Reply {
         message = text;
     }
 
-    public void printMessage() {
+    public void printMsg() {
         System.out.println(message);
     }
 }

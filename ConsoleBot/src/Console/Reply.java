@@ -1,5 +1,5 @@
 package Console;
 
 public interface Reply {
-    public void printMessage();
+    public void printMsg();
 }

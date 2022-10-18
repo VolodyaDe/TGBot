@@ -1,5 +1,5 @@
 package Console;
 
 public interface Request {
-    public String getMessage();
+    public String getMsg();
 }

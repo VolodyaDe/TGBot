@@ -7,7 +7,7 @@ public class ConsoleRequest implements Request {
         message = text;
     }
 
-    public String getMessage() {
+    public String getMsg() {
         return message;
     }
 }
