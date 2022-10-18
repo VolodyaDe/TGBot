@@ -1,9 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bbe2eefb-1812-4c92-9491-7178c04682e2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="c32bb9a7-00bf-42fd-9d1e-84e622553eaf" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ConsoleBot/Console/ConsoleReply.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ConsoleBot/Console/ConsoleRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ConsoleBot/Console/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ConsoleBot/Console/Reply.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ConsoleBot/Console/Request.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Console/ConsoleReply.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Console/ConsoleReply.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Console/ConsoleRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Console/ConsoleRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Console/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Console/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Console/Reply.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Console/Reply.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Console/Request.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Console/Request.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lubiteli_beer_fork" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +34,7 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2GDYoev1JZD0OCnta1Qq460wBUZ" />
+  <component name="ProjectId" id="2GJ1omkG6Dd6biWCCCKa2kwg4Sk" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -39,11 +49,11 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="bbe2eefb-1812-4c92-9491-7178c04682e2" name="Changes" comment="" />
-      <created>1665924810034</created>
+      <changelist id="c32bb9a7-00bf-42fd-9d1e-84e622553eaf" name="Changes" comment="" />
+      <created>1666092061904</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1665924810034</updated>
+      <updated>1666092061904</updated>
     </task>
     <servers />
   </component>
