@@ -1,9 +1,10 @@
 package Console;
 
-public class Request {
+public class Response
+{
     protected String message;
 
-    public Request(String text)
+    public Response(String text)
     {
         message = text;
     }

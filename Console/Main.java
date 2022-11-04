@@ -1,19 +1,22 @@
 package Console;
 
-import java.util.Scanner;
+public class Main
+{
+    public static void main(String[] args)
+    {
+        RequestReader reader = new ConsoleRequestReader();
+        ResponseReplier replier = new ConsoleResponseReplier();
+        RequestHandler requestHandler = new SimpleRequestHandler();
+        StopHandler stopHandler = new KeywordStopHandler("exit");
 
-public class Main {
-    public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-        while (true) {
-            String text = input.nextLine();
-            if (text.equals("exit"))
+        while (true)
+        {
+            Request request = reader.read();
+            if (stopHandler.needStop(request))
                 break;
 
-            ConsoleRequest Set = new ConsoleRequest(text);
-            String message = Set.getMessage();
-            ConsoleReply Get = new ConsoleReply(message);
-            Get.printMessage();
+            Response response = requestHandler.handle(request);
+            replier.reply(response);
         }
     }
 }
