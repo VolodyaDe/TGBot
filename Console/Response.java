@@ -2,10 +2,15 @@ package Console;
 
 public class Response
 {
-    protected String message;
+    private String message;
 
     public Response(String text)
     {
         message = text;
+    }
+
+    public String getMessage()
+    {
+        return message;
     }
 }

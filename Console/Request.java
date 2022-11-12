@@ -1,10 +1,15 @@
 package Console;
 
 public class Request {
-    protected String message;
+    private String message;
 
     public Request(String text)
     {
         message = text;
+    }
+
+    public String getMessage()
+    {
+        return message;
     }
 }

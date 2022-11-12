@@ -9,8 +9,9 @@ public class KeywordStopHandler implements StopHandler
         stopWord = text;
     }
 
+    @Override
     public boolean needStop(Request request)
     {
-        return stopWord.equals(request.message);
+        return stopWord.equals(request.getMessage());
     }
 }

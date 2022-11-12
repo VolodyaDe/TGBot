@@ -2,5 +2,5 @@ package Console;
 
 public interface StopHandler
 {
-    public boolean needStop(Request request);
+    boolean needStop(Request request);
 }
