@@ -1,6 +1,6 @@
-package Console;
+import org.telegram.telegrambots.meta.api.objects.Update;
 
 public interface RequestReader
 {
-    Request read();
+    Request read(Update update);
 }

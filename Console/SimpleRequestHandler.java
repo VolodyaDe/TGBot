@@ -1,5 +1,3 @@
-package Console;
-
 public class SimpleRequestHandler implements RequestHandler
 {
     @Override
