@@ -1,6 +1,4 @@
-package Console;
-
 public interface ResponseReplier
 {
-    void reply(Response response);
+    String reply(Response response);
 }

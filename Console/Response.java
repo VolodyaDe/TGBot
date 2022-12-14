@@ -1,5 +1,3 @@
-package Console;
-
 public class Response
 {
     private String message;

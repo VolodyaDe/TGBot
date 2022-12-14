@@ -1,5 +1,3 @@
-package Console;
-
 public class Request {
     private String message;
 
