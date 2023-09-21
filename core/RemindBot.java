@@ -14,7 +14,7 @@ import java.text.SimpleDateFormat;
 
 public class RemindBot extends TelegramLongPollingBot
 {
-    private final MemoManager remindManager = new MemoManager();
+    private final UserMemoManager remindManager = new UserMemoManager();
 
     @Override
     public void onUpdateReceived(Update update)
@@ -52,7 +52,7 @@ public class RemindBot extends TelegramLongPollingBot
                 return;
             }
 
-            Memo reminder = new Memo(message.getText().substring(idx + 1), date);
+            UserMemo reminder = new UserMemo(message.getText().substring(idx + 1), date);
             remindManager.addMemoToUser(message.getChatId(), reminder);
 
             Thread thread = new Thread(() -> {

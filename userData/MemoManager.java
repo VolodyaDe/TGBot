@@ -1,24 +1,10 @@
 package userData;
 
-import java.util.HashMap;
-
-public class MemoManager implements IMemoManager
+public interface MemoManager
 {
-    private final HashMap<Long, User> m_UserList = new HashMap<>();
+    void isUserExists(Long userId);
 
-    public void isUserExists(Long userId)
-    {
-        if (!m_UserList.containsKey(userId))
-            m_UserList.put(userId, new User());
-    }
+    void addMemoToUser(Long userId, UserMemo reminder);
 
-    public void addMemoToUser(Long userId, Memo reminder)
-    {
-        m_UserList.get(userId).addMemo(reminder);
-    }
-
-    public void removeMemoFromUser(Long userId, Memo reminder)
-    {
-        m_UserList.get(userId).removeMemo(reminder);
-    }
+    void removeMemoFromUser(Long userId, UserMemo reminder);
 }

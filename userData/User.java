@@ -1,23 +1,10 @@
 package userData;
 
-import java.util.ArrayList;
-
-public class User implements IUser
+public interface User
 {
-    private final ArrayList<Memo> m_MemoList = new ArrayList<>();
+    void addMemo(UserMemo reminder);
 
-    public void addMemo(Memo reminder)
-    {
-        m_MemoList.add(reminder);
-    }
+    void removeMemo(UserMemo reminder);
 
-    public void removeMemo(Memo reminder)
-    {
-        m_MemoList.remove(reminder);
-    }
-
-    public boolean isMemoExists()
-    {
-        return m_MemoList.size() != 0;
-    }
+    boolean isMemoExists();
 }
