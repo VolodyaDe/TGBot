@@ -99,6 +99,6 @@ public class RemindBot extends TelegramLongPollingBot
     @Override
     public String getBotToken()
     {
-        return "5757484893:AAFECYiMdoaOhiCIrE-geW1iv70S1lSwRrM";
+        return System.getenv("BOT_TOKEN");
     }
 }
