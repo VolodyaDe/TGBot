@@ -1,6 +1,8 @@
 package requests;
 
+import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
+
 public interface ResponseReplier
 {
-    String reply(Bucket request);
+    void reply(Response response, SendMessage newMessage);
 }

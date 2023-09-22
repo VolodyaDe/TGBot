@@ -1,10 +1,14 @@
 package requests;
 
+import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
+
+
 public class BotResponseReplier implements ResponseReplier
 {
     @Override
-    public String reply(Bucket request)
+    public void reply(Response response, SendMessage newMessage)
     {
-        return request.getMessage();
+        newMessage.setChatId(response.getUserId());
+        newMessage.setText(response.getMessage());
     }
 }

@@ -1,8 +1,8 @@
 package requests;
 
+import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
+
 public interface RequestHandler
 {
-    void handle(Bucket request, ResponseReplier replier) throws InterruptedException;
-
-    Bucket getResponse();
+    void handle(Request request, ResponseReplier replier, SendMessage newMessage) throws InterruptedException;
 }
