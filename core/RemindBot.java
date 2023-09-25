@@ -4,7 +4,6 @@ import requests.*;
 
 import org.telegram.telegrambots.meta.api.objects.Message;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
-import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.objects.Update;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 
@@ -26,12 +25,11 @@ public class RemindBot extends TelegramLongPollingBot
         Request request = prepareRequest(update);
         try
         {
-            SendMessage newMessage = new SendMessage();
-            requestHandler.handle(request, replier, newMessage);
+            requestHandler.handle(request, replier);
 
             try
             {
-                execute(newMessage);
+                execute(replier.getNewMessage());
             }
             catch (TelegramApiException e)
             {

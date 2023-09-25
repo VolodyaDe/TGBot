@@ -9,12 +9,16 @@ import java.util.Date;
 public class BotRequestHandler implements RequestHandler
 {
     @Override
-    public void handle(Request request, ResponseReplier replier, SendMessage newMessage) throws InterruptedException {
+    public void handle(Request request, ResponseReplier replier) throws InterruptedException {
         Response response;
         if (request.getMessage().equals("/start"))
+        {
             response = new Response("Welcome\nIt's a primitive reminder bot\n\nEnter /help for more information", request.getUserId());
+        }
         else if (request.getMessage().equals("/help"))
+        {
             response = new Response("Format of the memo:\n\n1st str: *date* (dd.MM.yyyy HH:mm)\nother str: *text*", request.getUserId());
+        }
         else
         {
             String requestMessage = request.getMessage();
@@ -33,6 +37,6 @@ public class BotRequestHandler implements RequestHandler
             }
         }
 
-        replier.reply(response, newMessage);
+        replier.reply(response);
     }
 }
